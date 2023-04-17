@@ -1,0 +1,27 @@
+@import './../../styles/abstracts/mixins';
+
+.app-card-news-summary {
+    @include flex-row-between-start();
+    justify-content: start;
+    padding: 24px 0 32px;
+
+    img {
+        @include aspect-ratio-3-4();
+    }
+
+    div {
+        padding-left: 10px;
+        span {
+            @include date();
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            @include title-small();
+
+            a {
+                @include none-decoration();
+            }
+        }
+    }
+}

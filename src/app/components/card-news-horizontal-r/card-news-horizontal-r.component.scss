@@ -1,0 +1,38 @@
+@import './../../styles/abstracts/mixins';
+
+.app-card-news-horizontal-r {
+    @include flex-row-between-start();
+    
+    div {
+        padding-right: 8px;
+        span {
+            @include date();
+        }
+        
+        h1 {
+            @include title-small();   
+            a {
+                @include none-decoration();
+            }
+        }
+        
+        .description {
+            @include description();
+            display: none;
+        }
+    }
+    
+    img {
+        @include aspect-ratio-3-4();
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .app-card-news-horizontal-r {
+        div {
+            .description {
+                display: block;
+            }
+        }
+    }
+}

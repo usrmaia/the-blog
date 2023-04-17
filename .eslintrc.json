@@ -30,6 +30,8 @@
         "no-unused-private-class-members": "warn",
         "no-use-before-define": "error",
         "require-atomic-updates": "warn",
+        "@typescript-eslint/no-inferrable-types": "warn",
+        "no-constant-condition": "warn",
 
         // Sugestões
         "accessor-pairs": "warn",

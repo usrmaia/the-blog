@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+@import './app/styles/abstracts/functions';
+@import './app/styles/abstracts/mixins';
+@import './app/styles/abstracts/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*, h1, h2, h3, h4, h5, h6, span, a, img, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    
+}
+
+span {
+    margin: 1rem 0 0 0;
+}
+
+body {
+    font-family: $font-poppins;
+}

@@ -1,0 +1,95 @@
+@import './../../../styles/abstracts/mixins';
+
+@media screen and (min-width: 768px) {
+    .top-news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        .card-news-summary {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    .latest-news {
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .advertising-night, .advertising-jonquil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 24px;
+
+        div {
+            flex-basis: 0;
+            flex-grow: 1;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+                @include title-large();
+            }
+
+            p {
+                font-size: $font-size-description-large;
+                line-height: $spacing-height-large;
+            }
+        }
+    }
+
+    .advertising-jonquil {
+        div {
+            h1 {
+                color: $color-earle-black;
+            }
+        }
+    }
+
+    .personalized-news {
+        
+    }
+
+    .in-your-interest {
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+
+            app-card-news-full {
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .other-news {
+        flex-direction: row;
+        
+        .other-news-articles {
+            flex: 2;
+        }
+    
+        .other-news-archive {
+            flex: 1;
+            width: 320px;
+            
+            .separator-image {
+                width: 320px;
+            }
+    
+            .comments {
+                width: 320px;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,20 @@
+@import './../../styles/abstracts/mixins';
+@import './../../styles/abstracts/variables';
+
+.app-topic-news {
+    @include flex-column-between-start();
+    max-width: 300px;
+    padding-bottom: 4px;
+    border-bottom: 1px $color-timberwolf-2 solid;
+
+    span {
+        @include date();
+    }
+    
+    h1 {
+        @include title-small();   
+        a {
+            @include none-decoration();
+        }
+    }
+}

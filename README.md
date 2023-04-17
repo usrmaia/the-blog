@@ -1,27 +1,10 @@
-# TheBlog
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# The Blog
+Projeto frontend de um blog de notícias.
+## Tecnologias usadas
+| [![HTML5](https://img.icons8.com/color/64/null/html-5--v1.png)](https://www.w3schools.com/html/) | [![SCSS](https://img.icons8.com/color/64/null/sass-avatar.png)](https://sass-lang.com/documentation/syntax) | [![TypeScript](https://img.icons8.com/color/64/3178C6/typescript.png)](https://www.typescriptlang.org/) | [![Angular](https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/64/000000/external-angular-a-typescript-based-open-source-web-application-framework-logo-shadow-tal-revivo.png)](https://angular.io/) | [![Figma](https://img.icons8.com/fluency/64/null/figma.png)](https://figma.com/) | [![Google Fonts](./assets/icons/google-fonts.png)](https://fonts.google.com/) | [![JSON Server](https://img.icons8.com/ios-filled/64/ffffff/json.png)](https://www.npmjs.com/package/json-server) | 
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| HTML5 | SCSS | TypeScript | Angular | Figma | Fonts | JSON Server |
+## Projeto Mobile
+![video](./assets/gifs/mobile.gif)
+## Projeto Desktop
+![video](./assets/gifs/desktop.gif)

@@ -1,0 +1,10 @@
+<div class="app-card-news">
+    <div class="image">
+        <img src="{{ cardInfo.image }}" alt="Imagem da notícia">
+    </div>
+    <div class="contente">
+        <span class="date">{{ cardInfo.publish_date }}</span>
+        <h1 class="title"><a class="link" [routerLink]="['/news', cardInfo.id]">{{ cardInfo.title }}</a></h1>
+        <p class="description">{{ cardInfo.description }}</p>
+    </div>
+</div>

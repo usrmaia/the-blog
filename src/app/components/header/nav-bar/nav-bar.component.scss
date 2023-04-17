@@ -1,0 +1,99 @@
+@import './../../../styles/abstracts/mixins';
+@import './../../../styles/abstracts/variables';
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+
+    background-color: $color-night-0;
+    color: $color-platinum-10;
+    padding: 16px $spacing-medium;
+
+    height: 60px;
+
+    .pages-nav {
+      display: flex;
+      gap: 12px;
+    }
+
+    .brand {
+      flex: 0;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: $color-platinum-10;
+      cursor: pointer;
+  
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  
+    .links {
+      flex: 2;
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      @media (min-width: 768px) {
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          display: flex;
+        }
+      }
+  
+      li {
+        margin: 0 12px;
+  
+        a {
+          text-decoration: none;
+          transition: 0.2s;
+          color: $color-platinum-10;
+
+  
+          a:hover {
+            color: $color-platinum;
+          }
+        }
+      }
+      
+      &.active {
+        display: flex;
+        flex-direction: column;
+        
+        background: $color-eerie-black;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        .pages-nav {
+          
+        }
+        
+        li {
+          padding: 16px $spacing-medium;
+          
+          a {
+            color: $color-platinum-10;
+          }
+          
+          a:hover {
+            transition: .2s;
+            color: $color-platinum; 
+          }
+        }
+      }
+    }
+  }
+  

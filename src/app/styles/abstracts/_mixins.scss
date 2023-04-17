@@ -1,0 +1,116 @@
+@import './variables';
+
+@mixin font-poppins-title-600() {
+    font-family: $font-poppins;
+    font-weight: 600;
+    font-size: $font-size-title-xxx-large;
+}
+
+@mixin flex-row-center() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-between-start() {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: $spacing-medium;
+}
+
+@mixin flex-column-between-start() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: $spacing-medium;
+}
+
+@mixin grid-row-1-1() {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+@mixin aspect-ratio-1-1() {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+@mixin aspect-ratio-4-3() {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+@mixin aspect-ratio-3-4() {
+    height: 9rem;
+    width: auto;
+    object-fit: cover;
+    aspect-ratio: 3/4;
+}
+
+@mixin aspect-ratio-4-7() {
+    height: 14rem;
+    width: auto;
+    object-fit: cover;
+    aspect-ratio: 4/7;
+}
+
+@mixin aspect-ratio-16-9() {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin date() {
+    font-size: $font-size-data;
+    color: $color-platinum-80;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+@mixin title-large() {
+    font-size: $font-size-title-large;
+    color: $color-platinum;
+    line-height: $spacing-height-x-large;
+}
+
+@mixin title-mediun() {
+    font-size: $font-size-title-medium;
+    color: $color-platinum;
+    line-height: $spacing-height-large;
+}
+
+@mixin title-small() {
+    font-size: $font-size-title-x-small;
+    color: $color-platinum;
+    line-height: $spacing-height-small;
+}
+
+@mixin page-title() {
+    font-size: $font-size-title-x-small;
+    color: $color-timberwolf-2;
+    text-transform: uppercase;
+}
+
+@mixin none-decoration() {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+@mixin description() {
+    font-size: $font-size-description-medium;
+    font-weight: 300;
+    line-height: $spacing-height-large;
+    color: $color-platinum-50;
+}

@@ -1,0 +1,213 @@
+@import './../../../styles/abstracts/mixins';
+
+.top-news {
+    background-color: $color-night;
+    color: $color-platinum;
+    padding: 0 $spacing-medium;
+    @include flex-column-between-start();
+}
+
+.latest-news {
+    background-color: $color-earle-black;
+    color: $color-timberwolf;
+    padding: 20px $spacing-medium;
+
+    h1 {
+        @include page-title();
+        padding-bottom: 12px;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.advertising-night {
+    background-color: $color-night;
+    color: $color-platinum;
+    padding: 16px $spacing-medium;
+
+    div {
+        padding: 12px;
+        h1 {
+            @include title-mediun();
+            margin-bottom: 16px;
+            
+            a {
+                @include none-decoration();
+            }
+        }
+        
+        p {
+            @include description();
+            font-size: $font-size-description-small;
+            line-height: $spacing-height-small;
+            padding-bottom: 12px;
+        }
+        
+        button {
+            display: flex;
+            margin: auto;
+            padding: 10px;
+            width: max-content;
+            
+            background-color: inherit;
+            border-color: $color-timberwolf;
+            color: $color-platinum;
+        }
+
+        img {
+            @include aspect-ratio-16-9(); 
+        }
+    }
+}
+
+.personalized-news {
+    background-color: $color-earle-black;
+    color: $color-platinum;
+    padding: 16px $spacing-medium;
+
+    h1 {
+        @include page-title();
+        padding-bottom: $spacing-medium;
+    }
+    
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 24px;
+
+        app-card-news-vertical-r {
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+    }
+}
+
+.advertising-jonquil {
+    background-color: $color-jonquil;
+    color: $color-earle-black;
+    padding: 16px $spacing-medium;
+
+    div {
+        padding: 12px;
+        h1 {
+            @include title-mediun();
+            color: $color-earle-black;
+            margin-bottom: 16px;
+            
+            a {
+                @include none-decoration();
+            }
+        }
+        
+        p {
+            @include description();
+            color: $color-earle-black;
+            font-size: $font-size-description-small;
+            line-height: $spacing-height-small;
+            padding-bottom: 12px;
+        }
+        
+        button {
+            display: flex;
+            margin: auto;
+            padding: 10px;
+            width: max-content;
+            
+            background-color: inherit;
+            border-color: $color-earle-black;
+            color: $color-earle-black;
+        }
+
+        img {
+            @include aspect-ratio-16-9(); 
+        }
+    }
+
+}
+
+.similar-news {
+    background-color: $color-night;
+}
+
+.in-your-interest {
+    background-color: $color-eerie-black;
+    color: $color-platinum;
+    padding: 16px $spacing-medium;
+
+    app-card-news-full {
+        min-width: 320px;
+    }
+}
+
+.other-news {
+    background-color: $color-earle-black;
+    color: $color-platinum;
+    padding: 16px $spacing-medium;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .other-news-articles {
+        h1 {
+            @include page-title();
+            padding-bottom: $spacing-medium;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+
+        }
+    }
+
+    .other-news-archive {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+
+        h1 {
+            @include page-title();
+            padding-bottom: $spacing-medium;
+        }
+
+        div {
+
+        }
+        
+        .separator-image {
+            width: 100%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .comments {
+            h1 {
+                @include page-title();
+                padding-bottom: $spacing-medium;
+            }
+
+            div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import './../../styles/abstracts/mixins';
+
+.app-card-news-vertical-r {
+    @include flex-column-between-start();
+    
+    img {
+        @include aspect-ratio-4-3();
+    }
+
+    span {
+        @include date();
+    }
+    
+    h1 {
+        @include title-small();   
+
+        a {
+            @include none-decoration();
+        }
+    }
+    
+    .description {
+        display: none;
+    }
+}

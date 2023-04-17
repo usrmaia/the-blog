@@ -1,0 +1,40 @@
+@import './../../styles/abstracts/mixins';
+
+.app-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4px;
+
+
+    padding-bottom: 8px;
+    border-bottom: 1px $color-timberwolf-2 solid;
+
+    .profile-picture {
+        width: 36px;
+        height: 36px;
+
+        img {
+            @include aspect-ratio-1-1();
+            border-radius: 100%;
+        }
+    }
+
+    .publication {
+        width: 240px;
+        
+        p {
+            margin-bottom: 8px;
+            @include description();
+            font-size: $font-size-description-small;
+            
+            a {
+                @include none-decoration();
+            }
+        }
+
+        span {
+            @include title-small();
+        }
+    }
+}

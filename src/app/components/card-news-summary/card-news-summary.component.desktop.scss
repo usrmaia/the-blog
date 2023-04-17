@@ -1,0 +1,7 @@
+@import './../../styles/abstracts/mixins';
+
+@media screen and (min-width: 768px) {
+    .app-card-news-summary {
+        padding: 0px;
+    }
+}

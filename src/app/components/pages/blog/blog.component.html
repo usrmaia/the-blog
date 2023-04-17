@@ -1,0 +1,227 @@
+<app-title></app-title>
+
+<section class="top-news">
+  <div>
+    <app-card-news-full 
+      [cardInfo] = "getNews()"
+    ></app-card-news-full>
+  </div>
+  <div class="card-news-summary">
+    <app-card-news-summary
+      [cardInfo] = "getNews()"
+    ></app-card-news-summary>
+    <app-card-news-summary
+      [cardInfo] = "getNews()"
+    ></app-card-news-summary>
+    <app-card-news-summary
+      [cardInfo] = "getNews()"
+    ></app-card-news-summary>
+  </div>
+</section>
+
+<section class="latest-news"> 
+  <h1>Últimas Nóticias</h1>
+  <div>
+    <app-card-news-picture class="col1"
+    [cardInfo] = "getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture class="col"
+    [cardInfo] = "getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture class="col2"
+    [cardInfo] = "getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture class="col2"
+    [cardInfo] = "getNews()"
+    ></app-card-news-picture>
+  </div>
+</section>
+
+<section class="advertising-night">
+  <div>
+    <h1><a>Conheça meu perfil no LinkedIn e acompanhe meu desenvolvimento como Dev!</a></h1>
+    <p>Se você é apaixonado por tecnologia e desenvolvimento, eu convido você a dar uma olhada no meu perfil no LinkedIn! Vamos nos conectar e trocar ideias sobre esse universo incrível que é o desenvolvimento!</p>
+    <button>Acessar meu LinkedIn!</button>
+  </div>
+  <div>
+    <img src="../../../../assets/img/touch.jpg" alt="Imagem chamando para a ação">
+  </div>
+</section>
+
+<section class="personalized-news">
+  <h1>Noticias Personalizadas</h1>
+  <div>
+    <app-card-news-vertical-r
+    [cardInfo]="getNews()"
+    ></app-card-news-vertical-r>
+    <app-card-news-vertical-r
+    [cardInfo]="getNews()"
+    ></app-card-news-vertical-r>
+    <app-card-news-vertical-r
+    [cardInfo]="getNews()"
+    ></app-card-news-vertical-r>
+    <app-card-news-vertical-r
+    [cardInfo]="getNews()"
+    ></app-card-news-vertical-r>
+  </div>
+</section>
+
+<section class="advertising-jonquil">
+  <div>
+    <h1><a>Conheça o meu Github como desenvolvedor!</a></h1>
+    <p>Olá! Se você está interessado em desenvolvimento, eu gostaria de convidá-lo a conhecer o meu Github. Lá eu posto alguns projetos, códigos e recursos sobre desenvolvimento que podem ser úteis para você. Então, não perca mais tempo e confira meu Github agora mesmo!</p>
+    <button>Acessar meu Github!</button>
+  </div>
+  <div>
+    <img src="../../../../assets/img/github.jpg" alt="Imagem chamando para a ação">
+  </div>
+</section>
+
+<section class="in-your-interest personalized-news">
+  <h1>Do seu interesse</h1>
+  <div>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+    <app-card-news-full
+    [cardInfo]="getNews()"
+    ></app-card-news-full>
+  </div>
+</section>
+
+<section class="similar-news personalized-news">
+  <h1>Notícias similares</h1>
+  <div>
+    <app-card-news-picture
+      [cardInfo]="getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture
+      [cardInfo]="getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture
+      [cardInfo]="getNews()"
+    ></app-card-news-picture>
+    <app-card-news-picture
+      [cardInfo]="getNews()"
+    ></app-card-news-picture>
+  </div>
+</section>
+
+<section class="other-news">
+  <div class="other-news-articles">
+    <h1>Outros artigos</h1>
+    <div class="news">
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+      <app-card-news-horizontal-r
+      [cardInfo]="getNews()"
+      ></app-card-news-horizontal-r>
+    </div>
+  </div>
+  <aside class="other-news-archive">
+    <div>
+      <h1>Arquivos</h1>
+      <div>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+        <app-topic-news
+        [cardInfo]="getNews()"
+        ></app-topic-news>
+      </div>
+    </div>
+    <div class="separator-image">
+      <img src="../../../../assets/img/news.jpg" alt="Letreiro de notícia">
+    </div>
+    <div class="comments">
+      <h1>Comentários</h1>
+      <div>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+        <app-comment
+        [commentInfo]="getComment()"
+        ></app-comment>
+      </div>
+    </div>
+  </aside>
+</section>

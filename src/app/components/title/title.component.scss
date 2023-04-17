@@ -1,0 +1,10 @@
+@import '../../styles/abstracts/mixins';
+
+h1 {
+    background-color: $color-night;
+    color: $color-platinum;
+    padding: 0 $spacing-medium;
+    @include font-poppins-title-600();
+    @include flex-row-center();
+    padding-bottom: 20px;
+}

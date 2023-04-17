@@ -1,0 +1,29 @@
+@import './../../styles/abstracts/mixins';
+
+.app-card-news-full {
+    @include flex-column-between-start();
+    
+    img {
+        @include aspect-ratio-4-3();
+    }
+    
+    span {
+        @include date();
+        margin: 0;
+        padding-top: 20px;
+    }
+    
+    h1 {
+        @include title-mediun();
+        margin-bottom: 10px; 
+
+        a {
+            @include none-decoration();
+        }
+
+    }
+    
+    p {
+        @include description();
+    }
+}
